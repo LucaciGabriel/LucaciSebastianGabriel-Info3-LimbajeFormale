@@ -8,28 +8,7 @@ namespace Lab2Ex1
 {
     class Program
     {
-        static void Main()
-        {
-            string E = "012";
-            int min = 1;
-            int max = 5;
-            List<string> palindromelist = GeneratePalindromes(E, min, max);
-            //afisarea palindroamelor generate
-            Console.WriteLine("Palindroamele folosind caracterele '" + E + "' intre lungimile " + min + " si " + max + " sunt: ");
-            int lengthcounter = 0;
-            foreach (var palindrome in palindromelist)
-            {
-                if (palindrome.Length == lengthcounter)
-                    Console.WriteLine(palindrome);
-                else
-                {
-                    lengthcounter++;
-                    Console.WriteLine("Lungime "+ lengthcounter +": ");
-                    Console.WriteLine(palindrome);
-                }
-            }
-        }
-        //functia principala, parcurge lungimile posibile si apeleaza functia recursiva
+         //functia principala, parcurge lungimile posibile si apeleaza functia recursiva
         static List<string> GeneratePalindromes(string characters, int min, int max)
         {
             List<string> palindromelist = new List<string>();
@@ -55,6 +34,28 @@ namespace Lab2Ex1
                 current[left] = c;
                 current[right] = c;
                 GeneratePalindromeRec(characters, current, left + 1, right - 1, palindromelist);
+            }
+        }
+        
+        static void Main()
+        {
+            string E = "012";
+            int min = 1;
+            int max = 5;
+            List<string> palindromelist = GeneratePalindromes(E, min, max);
+            //afisarea palindroamelor generate
+            Console.WriteLine("Palindroamele folosind caracterele '" + E + "' intre lungimile " + min + " si " + max + " sunt: ");
+            int lengthcounter = 0;
+            foreach (var palindrome in palindromelist)
+            {
+                if (palindrome.Length == lengthcounter)
+                    Console.WriteLine(palindrome);
+                else
+                {
+                    lengthcounter++;
+                    Console.WriteLine("Lungime "+ lengthcounter +": ");
+                    Console.WriteLine(palindrome);
+                }
             }
         }
     }
