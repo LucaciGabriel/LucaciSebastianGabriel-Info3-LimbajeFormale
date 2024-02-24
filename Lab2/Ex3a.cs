@@ -35,7 +35,7 @@ namespace Lab2Ex3a
         static void Main()
         {
             char[] characters = { 'a', 'b' };
-            int maxlen = 5;
+            int maxlen = 3;
             //enuntul nu era clar pentru ca zicea doar "de lungime maxima", fara un numar care sa fie lungimea maxima,
             //asa ca am luat 3 ca lungime maxima, dar poate fi schimbata valoarea la maxlen pentru alta lungime maxima
             List<string> stringslist=GenerateStrings(characters, maxlen);
