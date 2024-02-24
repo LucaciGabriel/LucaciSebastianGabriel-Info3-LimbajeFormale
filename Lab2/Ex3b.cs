@@ -27,13 +27,18 @@ namespace Lab2Ex3b
                 return;
             }
             //conditia asta este pentru regulile de productie, care daca le-am inteles corect,
-            //practic inseamna ca stringul generat trebuie sa fie format dintr-o combinatie de 0 si 1, iar ultimul caracter sa fie 2,3 sau 4 daca stringul are macar doua caractere
+            //practic inseamna ca stringul generat trebuie sa fie format dintr-o combinatie de 0 si 1, iar ultimul caracter sa fie 2 daca penultimul este 0,
+            //si 3 sau 4 daca penultimul este 1, daca stringul are macar doua caractere
             if (currentlen == maxlen - 1 && currentlen!=0)
             {
-                for (int i = 2; i <= 4; i++)
+                if (current[current.Length - 1] == '1')
                 {
-                    GenerateStringRec(characters, maxlen, currentlen + 1, current + characters[i], stringslist);
+                    for (int i = 3; i <= 4; i++)
+                    {
+                        GenerateStringRec(characters, maxlen, currentlen + 1, current + characters[i], stringslist);
+                    }
                 }
+                else GenerateStringRec(characters, maxlen, currentlen + 1, current + characters[2], stringslist);
             }
             else
             {
