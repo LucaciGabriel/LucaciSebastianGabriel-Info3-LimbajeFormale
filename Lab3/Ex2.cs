@@ -10,9 +10,9 @@ namespace Lab3ex2
     {
         //functie recursiva care genereaza toate combinatiile posibile pentru caracterele din characters care sa fie de lungimea data de length
         //cand un string ajunge la lungimea ceruta, apeleaza checkDoubles pentru a verifica daca are numarul cerut de litere dublate din doubles
-        static void GenerateStringRec(string characters, int length, int doubles, int currentIndex, string currentstring, List<string> stringslist)
+        static void GenerateStringRec(string characters, int length, int doubles, int currentlength, string currentstring, List<string> stringslist)
         {
-            if (currentIndex == length)
+            if (currentlength == length)
             {
                 if(CheckDoubles(currentstring,doubles)==true)
                 {
@@ -23,7 +23,7 @@ namespace Lab3ex2
 
             foreach (char c in characters)
             {
-                GenerateStringRec(characters, length, doubles, currentIndex + 1, currentstring + c, stringslist);
+                GenerateStringRec(characters, length, doubles, currentlength + 1, currentstring + c, stringslist);
             }
         }
         //functie folosita pentru a verifica daca avem numarul de litere duble dorit sau nu
