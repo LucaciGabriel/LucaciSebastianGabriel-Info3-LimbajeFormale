@@ -1,6 +1,6 @@
 D(q0,a)={q1,q2}
 D(q0,b)={null}
-D(q1,a)={q1,q2}
+D(q1,a)={q1,q2,q3,q4}
 D(q1,b)={q2,q3,q4}
 D(q2,a)={q3,q4}
 D(q2,b)={q2,q3,q4}
