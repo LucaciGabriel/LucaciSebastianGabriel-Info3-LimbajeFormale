@@ -14,7 +14,7 @@ L={(0^i 1^j)|i>j}
 fie p constanta pumping
 w=(0^p 1^p-1)
 w=xyz, x=0^p-1, y=0, z=1^p-1
-|xy|<=p (adevarat xy=(0^p-1 0) are lungimea p)
+|xy|<=p (adevarat xy=(0^p-1 0)=0^p are lungimea p)
 |y|>=1 (adevarat y=0 are lungimea 1)
 deci wy^iz trebuie sa apartina la L oricare ar fi i>=0
 daca i=0 => w=(0^p-1 1^p-1) ceea ce nu apartine de L (i nu este strict mai mare ca j)
