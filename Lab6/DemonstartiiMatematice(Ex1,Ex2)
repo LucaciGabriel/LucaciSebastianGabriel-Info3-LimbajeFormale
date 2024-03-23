@@ -37,4 +37,4 @@ w=xyz, x=a^p-1, y=a, z=(b^p c^p)
 |xy|<=p (adevarat xy=(a^p-1 a)=a^p are lungimea p)
 |y|>=1 (adevarat y=a are lungimea 1)
 deci wy^iz trebuie sa apartina la L oricare ar fi i>=0
-daca i=2 => w=(a^p-1 a^2 b^p c^p)=(a^p+1 b^p c^p) ceea ce nu apartine de L (sunt mai multe aparitii de a decat b si c)
+daca i=2 => w=(a^p-1 a^2 b^p c^p)=(a^p+1 b^p c^p) ceea ce nu apartine de L (sunt un numar diferit de aparitii de a decat b si c)
