@@ -27,7 +27,7 @@ w=xyz, x=a^p-1, y=a, z=b^p
 |xy|<=p (adevarat xy=(a^p-1 a)=a^p are lungimea p)
 |y|>=1 (adevarat y=a are lungimea 1)
 deci wy^iz trebuie sa apartina la L oricare ar fi i>=0
-daca i=2 => w=(a^p-1 a^2 b^p-1)=(a^p b^p-1) ceea ce nu apartine de L (i este mai mare ca j)
+daca i=2 => w=(a^p-1 a^2 b^p)=(a^p+1 b^p) ceea ce nu apartine de L (i este mai mare ca j)
 
 2.3
 L={(a^n b^n c^n)|n>0}
